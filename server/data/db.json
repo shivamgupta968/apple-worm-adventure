@@ -1,0 +1,134 @@
+{
+  "users": [
+    {
+      "id": "47e0bb74-2568-496a-bbc0-898e77417a0d",
+      "name": "Demo Admin",
+      "email": "admin@appleworm.test",
+      "passwordHash": "$2a$10$EnyOIPo778l3uKWmypKiwu781p6se0KWTf9.STPt2TaUX9X08ygJi",
+      "admin": true,
+      "currentLevel": 1,
+      "totalScore": 0,
+      "totalStars": 0,
+      "coins": 500,
+      "progress": {},
+      "createdAt": "2026-11-20T07:13:30.306Z"
+    },
+    {
+      "id": "abfe7bd6-8be8-4523-9a85-d8b8e1dec95d",
+      "name": "shivam",
+      "email": "shivamguptaji04062003@gmail.com",
+      "passwordHash": "$2a$10$accyWaLXlvV7itPr4cOp8.JoZ2uYuwzSunmeZ2FuqNwfGFM1RqJda",
+      "admin": false,
+      "currentLevel": 3,
+      "totalScore": 0,
+      "totalStars": 0,
+      "coins": 50,
+      "progress": {
+        "1": {
+          "stars": 3,
+          "score": 50,
+          "moves": 18,
+          "apples": 2
+        },
+        "2": {
+          "stars": 3,
+          "score": 80,
+          "moves": 24,
+          "apples": 3
+        }
+      },
+      "createdAt": "2026-11-20T07:32:19.082Z"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "45ab7869-511c-4d8f-b69c-197a02badce4",
+      "userId": "abfe7bd6-8be8-4523-9a85-d8b8e1dec95d",
+      "level": 1,
+      "status": "COMPLETED",
+      "startedAt": "2026-11-20T07:32:42.544Z",
+      "moves": 0,
+      "checkpoint": null,
+      "completedAt": "2026-11-20T07:33:33.089Z"
+    },
+    {
+      "id": "06b5ce34-1a04-433e-8db4-fc7c657d37e0",
+      "userId": "abfe7bd6-8be8-4523-9a85-d8b8e1dec95d",
+      "level": 2,
+      "status": "COMPLETED",
+      "startedAt": "2026-11-20T07:33:35.435Z",
+      "moves": 0,
+      "checkpoint": null,
+      "completedAt": "2026-11-20T07:34:09.152Z"
+    },
+    {
+      "id": "f988a9af-9b49-4428-9037-0ddd82179798",
+      "userId": "abfe7bd6-8be8-4523-9a85-d8b8e1dec95d",
+      "level": 3,
+      "status": "ACTIVE",
+      "startedAt": "2026-11-20T07:34:11.929Z",
+      "moves": 0,
+      "checkpoint": null
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "3fbebfb8-279e-4f81-a1b7-800b3933f219",
+      "userId": "abfe7bd6-8be8-4523-9a85-d8b8e1dec95d",
+      "type": "REVIVE",
+      "sessionId": "06b5ce34-1a04-433e-8db4-fc7c657d37e0",
+      "status": "GRANTED",
+      "createdAt": "2026-11-20T07:33:47.064Z",
+      "expiresAt": "2026-11-20T07:36:47.064Z",
+      "provider": "MOCK_DEMO",
+      "completedAt": "2026-11-20T07:33:47.073Z",
+      "claimKey": "3fbebfb8-279e-4f81-a1b7-800b3933f219",
+      "grantedAt": "2026-11-20T07:33:47.080Z"
+    }
+  ],
+  "ledger": [
+    {
+      "id": "ee749127-8739-410c-b7b8-525dd7c2f557",
+      "userId": "abfe7bd6-8be8-4523-9a85-d8b8e1dec95d",
+      "amount": 25,
+      "reason": "LEVEL_REWARD",
+      "meta": {
+        "level": 2
+      },
+      "createdAt": "2026-11-20T07:34:09.152Z"
+    },
+    {
+      "id": "6032a1cd-d562-4f14-be72-3db84e8b0e92",
+      "userId": "abfe7bd6-8be8-4523-9a85-d8b8e1dec95d",
+      "amount": 0,
+      "reason": "REWARD_REVIVE",
+      "meta": {
+        "opportunityId": "3fbebfb8-279e-4f81-a1b7-800b3933f219"
+      },
+      "createdAt": "2026-11-20T07:33:47.080Z"
+    },
+    {
+      "id": "676ba10b-9c57-4354-a4b8-015326690214",
+      "userId": "abfe7bd6-8be8-4523-9a85-d8b8e1dec95d",
+      "amount": 25,
+      "reason": "LEVEL_REWARD",
+      "meta": {
+        "level": 1
+      },
+      "createdAt": "2026-11-20T07:33:33.089Z"
+    }
+  ],
+  "config": {
+    "levelCoins": 25,
+    "hintCost": 30,
+    "reviveCap": 2,
+    "maxRewardsPerDay": 12,
+    "maxRewardsPerSession": 5,
+    "cooldownSeconds": 20,
+    "doubleCoins": 50,
+    "doubleScore": 100,
+    "extraMoves": 5,
+    "booster": 25
+  },
+  "achievements": []
+}
